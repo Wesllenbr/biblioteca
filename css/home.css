@@ -244,6 +244,7 @@ select {
   text-decoration: none;
   color: var(--clr-neutral-1);
 }
+
 /*==================== HEADER ====================*/
 /* Header fixo no top */
 .header {
@@ -611,7 +612,7 @@ display: none;
   }
 
   .hero-section {
-    background-position: 200px 600px;
+    background-position: top;
   }
 
   .carrosel-container {
