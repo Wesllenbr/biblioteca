@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="https://kit.fontawesome.com/1f4699d846.js" crossorigin="anonymous"></script>
+  <title>Bibiblioteca</title>
+</head>
+
+<body>
+  <!-- ====== AS CLASSES ESTÃO ORGANIZADAS DE ACORDO COM A METODOLOGIA BEM ====== -->
+
+  <!-- ====== NAVBAR ====== -->
+  <header id="header" class="header">
+    <nav class="navbar container">
+      <a href="#" class="logo nav-logo">BibliotecaETE</a>
+
+      <!-- ====== MENU SÃO TODOS O ITEMS DENTRO HAMBURGUER ====== -->
+      <div id="menu" class="">
+        <ul class="nav-list nav-list--hidden nav-list--show">
+          <li class="nav-item">
+            <a href="#home" class="nav-link nav-link--active nav-link--show ">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link  nav-link--show">Livros</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link  nav-link--show">Contato</a>
+          </li>
+
+          <!-- ====== SOCIAL MEDIA APENAS PARA MOBILE ====== -->
+          <ul class="social-list">
+            <li class="social-item">
+              <i class="social-icon facebook fa-brands fa-facebook-f"></i>
+            </li>
+
+            <li class="social-item">
+              <i class="social-icon instagram fa-brands fa-instagram"></i>
+            </li>
+          </ul>
+        </ul>
+
+        <!-- ====== BUTÕES DE TOGGLE ====== -->
+        <button type="button" id="toggle-open" class="toggle toggle-open">
+          <i class="menu-icon fa-solid fa-bars"></i>
+        </button>
+
+        <button id="toggle-close" class="toggle toggle-close">
+          <i class="menu-icon fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <!-- ====== FIM DO MENU ====== -->
+
+      <!-- ====== BARRA DE PESQUISA APENAS PARA DESKTOP ====== -->
+      <div class="search search--active search--hidden">
+        <input class="search-input" type="text" name="input" placeholder="Digite o nome do livro" id="">
+
+        <button class="btn btn-search  btn-search--active">
+          <i class="search-icon fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="main">
+    <section class="hero-section">
+      <div class="hero-data">
+        <h1 id="h1" class="hero-title">A Guerra Dos Tronos - As Crônicas De Gelo e Fogo</h1>
+
+        <p class="hero-paragraph">Nos continentes de Westeros e Essos, em uma terra em que as estações duram anoe, três
+          enredos principais têm inicio...</p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn--primary">Ler</a>
+
+          <a href="#" class="btn btn--secondary">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="search">
+      <input id="input" class="search-input" type="text" name="input" placeholder="Digite o nome do livro" id="">
+
+      <button class="btn btn-search  btn-search--active">
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <div class="carrosel-container">
+      <div class="row">
+        <h2 class="carrossel-title-todos">
+          Todos os Livros
+        </h2>
+        <div class="content">
+          <div class="progress-bar">
+          </div>
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="carrossel-title-todos">
+          Todos os Livros
+        </h2>
+        <div class="content">
+          <div class="progress-bar">
+          </div>
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+          <div class="slider">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+      
+      <div class="row">
+        <h2 class="carrossel-title-todos">
+          Todos os Livros
+        </h2>
+        <div class="content">
+          <div class="progress-bar">
+          </div>
+          <button class="handle left-handle">
+            <div class="text">&#8249;</div>
+          </button>
+
+          <div class="slider">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+            <img src="images/harry.jpg" alt="">
+          </div>
+          <button class="handle right-handle">
+            <div class="text">&#8250;</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-data container">
+      <a href="" class="logo footer-logo">BibliotecaETE</a>
+
+      <nav class="footer-nav">
+        <div class="navegacao">
+          <h3 class="footer-title">Navegação</h3>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">Destaque</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Livros</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Contato</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Sugestões</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fale-conosco">
+          <h3 class="footer-title">Fale Conosco</h3>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">981016274</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">email.example.com</a>
+            </li>
+          </ul>
+
+          <div class="social-list">
+            <i class="social-icon facebook fa-brands fa-facebook-f"></i>
+
+            <i class="social-icon instagram fa-brands fa-instagram"></i>
+          </div>
+          </ul>
+        </div>
+      </nav>
+      <p class="footer-copy">&copy;2021 Copyright: TeamLagDev</p>
+    </div>
+
+  </footer>
+  <script src="js/carrossel.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- <div class="carrosel">
+  <h2 class="carrosel-title">Destaques</h2>
+
+  <div class="carrosel-data">
+    <div class="carrosel-list">
+      <img src="images/harry.jpg" alt="">
+      <img src="images/harry.jpg" alt="">
+      <img src="images/harry.jpg" alt="">
+      <img src="images/harry.jpg" alt="">
+      <img src="images/harry.jpg" alt="">
+      <img src="images/harry.jpg" alt="">
+    </div>
+    <button class="btn next-button" ><i class="fa-solid fa-angle-right"></i></button>
+    <button class="btn prev-button" ><i class="fa-solid fa-angle-left"></i></button>
+        </div>
+  </div> -->
