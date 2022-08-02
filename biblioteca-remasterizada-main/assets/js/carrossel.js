@@ -102,7 +102,7 @@ function throttle(cb, delay = 500) {
 
 window.onscroll = function(){
     var top = window.pageYOffset || document.documentElement.scrollTop
-    if( top > 300 ) {
+    if( top > 200 ) {
         const menu= document.querySelector('.header')
         menu.classList.add('scroll')
     }else{ 
