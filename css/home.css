@@ -244,7 +244,6 @@ select {
   text-decoration: none;
   color: var(--clr-neutral-1);
 }
-
 /*==================== HEADER ====================*/
 /* Header fixo no top */
 .header {
@@ -333,14 +332,6 @@ display: none;
   gap: 4px;
 }
 
-/* .menu--show .nav-link--active::before {
-  display: block;
-  content: "";
-  height: 28px;
-  width: 2px;
-  background-color: rgb(255, 0, 21);
-} */
-
 .menu--show .social-list {
   margin-top: 12px;
 }
@@ -361,37 +352,45 @@ display: none;
   height: 80px;
   transition: 0.4s;
 }
+
 /* ======== MAIN ======== */
 .hero-section {
+  --hero-height: 400px;
   position: relative;
-  padding-top: 140px;
-  height: 480px;
-  background: url(../images/game.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  height: var(--hero-height);
+}
+
+.background-container {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
   border-radius: 0px 0px 40px 40px;
 }
 
-/* for hero background */
-/* .hero-section::after {
-  content: "";
+.hero-section::after {
   display: block;
+  content: "";
   width: 100%;
+  height: 40px;
+  background: rgba(8, 11, 16, 0.7);
+  /* filter: blur(40px); */
+  z-index: 50;
+}
+
+.hero-img {
   height: 100%;
-  position: absolute;
-  top: 0;
-} */
+  transform: scale(2) translateY(100px);
+}
 
 .hero-data {
   position: relative;
-  padding: 32px var(--ml-container) 1.5rem;
-  position: absolute;
+  padding: 32px var(--ml-container) 2rem;
+   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; 
   z-index: 10;
-  border-radius: 0px 0px 40px 40px;
   max-width: 600px;
 }
 
@@ -406,7 +405,6 @@ display: none;
   left: 0;
   background: rgba(8, 11, 16, 0.7);
   filter: blur(40px);
-  border-radius: 0px 0px 40px 40px;
 }
 
 .hero-title {
@@ -560,6 +558,12 @@ display: none;
 }
 
 /* ======== ESTILOS PARA DISPOSITIVOS GRANDES ======== */
+
+@media (min-width: 700px) {
+  .hero-img {
+    transform: scale(1);
+  }
+}
 @media (min-width: 720px) {
   .nav-list {
     display: flex;
@@ -611,11 +615,18 @@ display: none;
     display: none;
   }
 
-  .hero-section {
-    background-position: top;
+  .background-container {
+    height: 480px;
   }
 
-  .carrosel-container {
+   .hero-img {
+    height: 100%;
+    }
+  
+  .hero-data {
+    bottom: 12px;
+  }
+    .carrosel-container {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
